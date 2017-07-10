@@ -37,6 +37,8 @@ CPP_SRCS = $(shell find $(SRC_PATH) -type f -name *.cpp -execdir test ! -f IGNOR
 INCLUDES = -I.
 DEFINES  =
 LIBS = -lc -lstdc++ -lm -ldl
+CFLAGS   = -std=gnu++11
+CPPFLAGS = -std=c++11
 
 all:	$(TARGET)
 
